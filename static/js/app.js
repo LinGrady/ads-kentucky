@@ -29,7 +29,7 @@ var MyScroll = "";
       Init.categoryToggle();
       Init.filterSearch();
       Init.passwordIcon();
-      Init.countdownInit(".countdown", "2025/07/01");
+      Init.countdownInit(".countdown", "2026/07/01");
       Init.formValidation();
       Init.contactForm();
       Init.dropdown();

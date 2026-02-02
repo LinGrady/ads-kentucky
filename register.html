@@ -9,10 +9,7 @@
 
     <title>KentuckyNews</title>
 
-    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
-
-    <!-- All CSS files -->
 
     <link rel="stylesheet" href="static/css/font-awesome.css">
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
@@ -20,25 +17,20 @@
     <link rel="stylesheet" href="static/css/slick-theme.css">
     <link rel="stylesheet" href="static/css/app.css">
 
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5020869002919663" 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5020869002919663"
         crossorigin="anonymous"></script>
 
 </head>
 
 <body class="tt-smooth-scroll">
-
-    <!-- Preloader START -->
     <div class="page-loader" id="preloader">
         <div class="spinner"></div>
         <div class="txt">
             <img src="static/picture/mobile-nav-logo.png" alt="">
         </div>
     </div>
-    <!-- Preloader END -->
-    <!-- Main Wrapper Start -->
+
     <div id="scroll-container">
-        <!-- HEADER MENU START -->
         <header class="header">
             <div class="header-topbar">
                 <div class="container-fluid slider-container">
@@ -50,19 +42,24 @@
                             <div>
                                 <div class="breaking-news-slider">
                                     <div class="news-text">
-                                        <p class="fw-500 black">LA Wildfires: Palisades and Eaton Fires Burn 36,000+ Acres, Death Toll Rises.</p>
+                                        <p class="fw-500 black">Global Cyberattack Breaches Corporate Firewalls, Data at
+                                            Risk.</p>
                                     </div>
                                     <div class="news-text">
-                                        <p class="fw-500 black">AI Summit Paris: Global Leaders Forge New Framework for AI Governance.</p>
+                                        <p class="fw-500 black">Massive California Wildfires Force Thousands to
+                                            Evacuate.</p>
                                     </div>
                                     <div class="news-text">
-                                        <p class="fw-500 black">Dow Hits Record High as Markets Rally on Strong Economic Data.</p>
+                                        <p class="fw-500 black">Global Stock Market Crashes, Governments Scramble to
+                                            Respond.</p>
                                     </div>
                                     <div class="news-text">
-                                        <p class="fw-500 black">China's Manus AI Agent Captures Global Tech Industry Attention.</p>
+                                        <p class="fw-500 black">Powerful Earthquake Rocks Asia-Pacific, Tsunami Warnings
+                                            Issued.</p>
                                     </div>
                                     <div class="news-text">
-                                        <p class="fw-500 black">Fed Holds Rates Steady at 3.50%-3.75% Range, Upgrades Growth Outlook.</p>
+                                        <p class="fw-500 black">Nationwide Lockdown Announced Amid New Health Crisis.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +129,7 @@
                                             <i class="fa-thin fa-chevron-down header-arrow d-xl-block d-none"></i>
                                         </a>
                                         <ul>
-                                            <li><a href="">Login</a></li>
+                                            <li><a href="login.html">Login</a></li>
                                             <li><a href="signup.html">Signup</a></li>
                                         </ul>
                                     </li>
@@ -145,7 +142,7 @@
                                             <li><a href="blog-with-siderbar.html">Blog With Siderbar</a></li>
                                             <li><a href="blog-detail.html">Blog Detail</a></li>
                                             <li><a href="news-detail.html">News Details</a></li>
-                                            <li><a href="">Login</a></li>
+                                            <li><a href="login.html">Login</a></li>
                                             <li><a href="signup.html">Signup</a></li>
                                             <li><a href="contact.html">Contact Us</a></li>
                                             <li><a href="404.html">404</a></li>
@@ -165,7 +162,7 @@
                                 </button>
                             </form>
                             <div class="">
-                                <a href="" class="dark-gray hover-content login-text">Login</a>
+                                <a href="login.html" class="dark-gray hover-content login-text">Login</a>
                             </div>
                             <div>
                                 <a class="cus-btn" href="signup.html">Sign up</a>
@@ -178,9 +175,7 @@
                 </nav>
             </div>
         </header>
-        <!-- HEADER MENU END -->
 
-        <!-- Sign In Section START -->
         <section class="signin-sec">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-end">
@@ -192,46 +187,54 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <p class="caption">Have a Account ?<br> <span class="color-primary"><a href="signup.html">Sign in</a> </span></p>
+                                    <p class="caption">New to Kentucky News?<br> <span class="color-primary"><a
+                                                href="signup.html">Create an account</a> </span></p>
                                 </div>
                             </div>
-                            <h2 class="black mb-36 fw-500">Sign Up</h2>
+                            <h2 class="black mb-36 fw-500">Register</h2>
                             <a href="" class="sign-with-google mb-24">
                                 <div>
                                     <img src="static/picture/google.png" alt="">
                                 </div>
                                 <div>
-                                    <p class="text">Sign in with Google</p>
+                                    <p class="text">Register with Google</p>
                                 </div>
                             </a>
-                            <p class="black mb-12">Enter your username or email address</p>
+                            <p class="black mb-12">Enter your details to create your account</p>
                             <form method="post" class="contact-form login-form">
-                                <input type="text" name="email" placeholder="Username or email address" class="form-control mb-24" required>
+                                <p class="black mb-12">Full Name</p>
+                                <input type="text" id="full-name" name="full-name" placeholder="Your Name"
+                                    class="form-control mb-24" required>
 
-                                <p class="black mb-12">Enter your name</p>
-                                <input type="text" id="name" name="name" placeholder="Name" class="form-control mb-24" required>
+                                <p class="black mb-12">Email address</p>
+                                <input type="email" name="email" placeholder="Email address"
+                                    class="form-control mb-24" required>
 
-                                <p class="black mb-12">Enter your Password</p>
-                                <input type="password" id="password" name="password" placeholder="Your Password" class="form-control mb-24" required>
+                                <p class="black mb-12">Password</p>
+                                <input type="password" id="password" name="password" placeholder="Your Password"
+                                    class="form-control mb-24" required>
 
-                                <p class="black mb-12">Re-enter your Password</p>
-                                <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter Your Password" class="form-control mb-24" required>
+                                <p class="black mb-12">Confirm Password</p>
+                                <input type="password" id="confirm-password" name="confirm-password"
+                                    placeholder="Re-enter Your Password" class="form-control mb-24" required>
+
+                                <div class="d-flex align-items-center gap-8 mb-24">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <label for="terms" class="caption mb-0">I agree to the Terms and Privacy Policy</label>
+                                </div>
 
                                 <div class="text-center">
-                                    <button type="submit" class="border-0 cus-btn cus-btn-2">Sign in</button>
+                                    <button type="submit" class="border-0 cus-btn cus-btn-2">Create account</button>
                                 </div>
 
                                 <div id="message" class="alert-msg"></div>
                             </form>
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Sign In Section END -->
 
-        <!-- FOOTER START -->
         <div class="footer-bar">
             <div class="container-fluid">
                 <div class="footer-bar-content">
@@ -241,7 +244,6 @@
                     <div class="footer-links-block">
                         <a href="">
                             <img src="static/picture/twitter.png" alt="">
-
                         </a>
                         <a href="">
                             <img src="static/picture/facebook.png" alt="">
@@ -262,12 +264,18 @@
                     <div class="row row-gap-4 align-items-center">
                         <div class="col-xxl-4 col-xl-6">
                             <div class="footer-block">
-                                <a href="index.html" class="mb-12"><img src="static/picture/footer-logo.png" alt=""></a>
-                                <p class="mb-16">Stay informed with the latest breaking news, in-depth analysis,<br> and comprehensive coverage from around the world.<br> Your trusted source for reliable journalism.</p>
+                                <a href="index.html" class="mb-12"><img src="static/picture/footer-logo.png"
+                                        alt=""></a>
+                                <p class="mb-16">Stay informed with the latest breaking news, in-depth analysis,<br>
+                                    and comprehensive coverage from around the world.<br> Your trusted source for
+                                    reliable journalism.</p>
                                 <div class="d-flex align-items-center gap-8">
                                     <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
-                                            <path d="M14.5938 2.375H1.40625C0.629281 2.375 0 3.00819 0 3.78125V12.2188C0 12.9964 0.633906 13.625 1.40625 13.625H14.5938C15.3642 13.625 16 12.9991 16 12.2188V3.78125C16 3.00956 15.3732 2.375 14.5938 2.375ZM14.3968 3.3125C14.1095 3.59828 9.16509 8.51666 8.99438 8.68647C8.72875 8.95209 8.37562 9.09834 8 9.09834C7.62437 9.09834 7.27125 8.95206 7.00475 8.68559C6.88994 8.57137 2.00009 3.70731 1.60319 3.3125H14.3968ZM0.9375 12.0279V3.97266L4.98869 8.0025L0.9375 12.0279ZM1.60378 12.6875L5.65338 8.66366L6.34272 9.34937C6.78541 9.79206 7.37397 10.0358 8 10.0358C8.62603 10.0358 9.21459 9.79206 9.65641 9.35025L10.3466 8.66366L14.3962 12.6875H1.60378ZM15.0625 12.0279L11.0113 8.0025L15.0625 3.97266V12.0279Z" fill="#45474F"></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewbox="0 0 16 16" fill="none">
+                                            <path
+                                                d="M14.5938 2.375H1.40625C0.629281 2.375 0 3.00819 0 3.78125V12.2188C0 12.9964 0.633906 13.625 1.40625 13.625H14.5938C15.3642 13.625 16 12.9991 16 12.2188V3.78125C16 3.00956 15.3732 2.375 14.5938 2.375ZM14.3968 3.3125C14.1095 3.59828 9.16509 8.51666 8.99438 8.68647C8.72875 8.95209 8.37562 9.09834 8 9.09834C7.62437 9.09834 7.27125 8.95206 7.00475 8.68559C6.88994 8.57137 2.00009 3.70731 1.60319 3.3125H14.3968ZM0.9375 12.0279V3.97266L4.98869 8.0025L0.9375 12.0279ZM1.60378 12.6875L5.65338 8.66366L6.34272 9.34937C6.78541 9.79206 7.37397 10.0358 8 10.0358C8.62603 10.0358 9.21459 9.79206 9.65641 9.35025L10.3466 8.66366L14.3962 12.6875H1.60378ZM15.0625 12.0279L11.0113 8.0025L15.0625 3.97266V12.0279Z"
+                                                fill="#45474F"></path>
                                         </svg>
                                     </div>
                                     <div>
@@ -370,58 +378,52 @@
                 <h6 class="white fw-400">Copyright &copy; 2026.KentuckyNews All rights reserved.</h6>
             </div>
         </div>
-        <!-- FOOTER END -->
 
-        <!-- Main Wrapper End -->
-    </div>
-    <!-- Back To Top Start -->
-    <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+        <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
 
-
-    <!-- Mobile Menu Start -->
-    <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-        <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-            <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="static/picture/mobile-nav-logo.png" alt=""></a>
-            </div>
-            <div class="mobile-nav__container"></div>
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:Haohao@VantageMobi.com">Haohao@VantageMobi.com</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+852 45678">+852 (4567) -890</a>
-                </li>
-            </ul>
-            <div class="mobile-nav__social">
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
+        <div class="mobile-nav__wrapper">
+            <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+            <div class="mobile-nav__content">
+                <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+                <div class="logo-box">
+                    <a href="index.html" aria-label="logo image"><img src="static/picture/mobile-nav-logo.png"
+                            alt=""></a>
+                </div>
+                <div class="mobile-nav__container"></div>
+                <ul class="mobile-nav__contact list-unstyled">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:Haohao@VantageMobi.com">Haohao@VantageMobi.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+852 45678">+852 (4567) -890</a>
+                    </li>
+                </ul>
+                <div class="mobile-nav__social">
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Mobile Menu End -->
 
-    <!-- Jquery Js -->
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/jquery-3.6.3.min.js"></script>
-    <script src="static/js/slick.min.js"></script>
-    <script src="static/js/jquery-validator.js"></script>
-    <script src="static/js/app.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MFFZJMN084"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        <script src="static/js/bootstrap.min.js"></script>
+        <script src="static/js/jquery-3.6.3.min.js"></script>
+        <script src="static/js/slick.min.js"></script>
+        <script src="static/js/jquery-validator.js"></script>
+        <script src="static/js/app.js"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MFFZJMN084"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-      gtag('config', 'G-MFFZJMN084');
-    </script>
+          gtag('config', 'G-MFFZJMN084');
+        </script>
 
+        </div>
 </body>
 
 </html>
