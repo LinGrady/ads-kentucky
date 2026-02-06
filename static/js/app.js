@@ -40,6 +40,12 @@ var MyScroll = "";
     BackToTop: function () {
       var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
       var rootElement = document.documentElement;
+      
+      // Check if scrollToTopBtn exists
+      if (!scrollToTopBtn) {
+        return;
+      }
+      
       function handleScroll() {
         var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
         if (rootElement.scrollTop / scrollTotal > 0.05) {
@@ -62,6 +68,11 @@ var MyScroll = "";
     },
 
     showReview: function () {
+      // Check if review-btn exists before binding events
+      if ($(".review-btn").length === 0) {
+        return;
+      }
+      
       $(".review-btn").on("click", function () {
         $(".review-btn").removeClass("te-button");
         var id = $(this).attr("data-atr");
@@ -75,6 +86,11 @@ var MyScroll = "";
       });
     },
     teamMemberShow: function (e) {
+      // Check if member elements exist
+      if ($(".member").length === 0) {
+        return;
+      }
+      
       $(".member").on("click", function () {
         var id = $(this).attr("id");
         $(".member").removeClass("active");
